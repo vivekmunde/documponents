@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
+import A from '../components/a';
 import H1 from '../components/h1';
 import H2 from '../components/h2';
 import H3 from '../components/h3';
@@ -22,6 +23,14 @@ const Test: React.FC = () => {
         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
         deserunt mollit anim id est laborum.
       </Paragraph>
+      <div>
+        <A href="https://react.dev/">React JS</A>
+      </div>
+      <div>
+        <A href="https://react.dev/" target="_blank">
+          React JS (External)
+        </A>
+      </div>
     </div>
   );
 };
