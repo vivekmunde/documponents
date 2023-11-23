@@ -1,18 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import Content from '../components/page/content';
-import Header from '../components/page/header';
-import Page from '../components/page/page';
-import Title from '../components/page/title';
+import * as PageComponents from '../components/page';
 import Paragraph from '../components/paragraph';
 
 const Test: React.FC = () => {
   return (
-    <Page>
-      <Header>
-        <Title>Article Title</Title>
-      </Header>
-      <Content>
+    <PageComponents.Page>
+      <PageComponents.Header>
+        <PageComponents.Title>Article Title</PageComponents.Title>
+      </PageComponents.Header>
+      <PageComponents.Content>
         <Paragraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -31,8 +28,8 @@ const Test: React.FC = () => {
           voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
           pariatur?
         </Paragraph>
-      </Content>
-    </Page>
+      </PageComponents.Content>
+    </PageComponents.Page>
   );
 };
 
