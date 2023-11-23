@@ -1,7 +1,16 @@
 import React from 'react';
+import { TComponentBaseProps } from './types';
 
-const Paragraph: React.FC<{ children: React.ReactNode; className?: string }> = ({ children, className }) => {
-  return <p className={`mb-4 ${className}`}>{children}</p>;
+const Paragraph: React.FC<TComponentBaseProps & React.HTMLProps<HTMLParagraphElement>> = ({
+  children,
+  className,
+  ...props
+}) => {
+  return (
+    <p className={`mb-4 ${className ?? ''}`} {...props}>
+      {children}
+    </p>
+  );
 };
 
 export default Paragraph;
