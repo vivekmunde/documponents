@@ -9,7 +9,7 @@ import Paragraph from '../components/paragraph';
 
 const Test: React.FC = () => {
   return (
-    <LayoutComponents.Layout>
+    <LayoutComponents.Layout className="lg:pl-[10vw]">
       <LayoutComponents.Left.Panel>
         <NavigationComponents.Panel>
           <LayoutComponents.Left.Header>
@@ -274,7 +274,7 @@ const Test: React.FC = () => {
           </NavigationComponents.Nav>
         </NavigationComponents.Panel>
       </LayoutComponents.Left.Panel>
-      <LayoutComponents.Content>
+      <LayoutComponents.Content className="lg:pr-[10vw]">
         <PageComponents.Page>
           <PageComponents.Header>
             <PageComponents.Title>Article Title</PageComponents.Title>
