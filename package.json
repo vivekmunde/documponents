@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "prettier": "prettier . --ext ts,tsx --write",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "x-clear": "rm -rf ./out",
+    "x-transpile": "npm run x-clear && tsc --project tsconfig.export.json"
   },
   "dependencies": {
     "pusu": "^1.2.1",
