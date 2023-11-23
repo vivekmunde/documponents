@@ -1,7 +1,8 @@
 import React from 'react';
+import { TComponentBaseProps } from '../types';
 
-const Content: React.FC<{ children: React.ReactNode; className?: string }> = ({ children, className }) => {
-  return <div className={className}>{children}</div>;
+const Content: React.FC<TComponentBaseProps & React.HTMLProps<HTMLDivElement>> = ({ children, ...props }) => {
+  return <div {...props}>{children}</div>;
 };
 
 export default Content;
