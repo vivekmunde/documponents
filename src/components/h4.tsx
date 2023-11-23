@@ -1,12 +1,9 @@
-import React, { CSSProperties } from 'react';
+import React from 'react';
+import { THProps } from './types';
 
-const H4: React.FC<{ children: React.ReactNode; className?: string; style?: CSSProperties }> = ({
-  children,
-  className,
-  style,
-}) => {
+const H4: React.FC<THProps> = ({ children, className, ...props }) => {
   return (
-    <h4 className={`mb-4 text-2xl font-bold ${className ?? ''}`} style={style}>
+    <h4 className={`mb-4 text-2xl font-bold ${className ?? ''}`} {...props}>
       {children}
     </h4>
   );
