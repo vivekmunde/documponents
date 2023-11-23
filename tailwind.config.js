@@ -1,12 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 import colors from 'tailwindcss/colors';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const { lightBlue, warmGray, trueGray, coolGray, blueGray, ...eligibleColors } = colors;
+
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
     colors: {
-      ...colors,
+      ...eligibleColors,
       primary: {
         50: '#fdf2f8',
         100: '#fce7f3',
