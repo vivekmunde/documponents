@@ -11,10 +11,10 @@ const Test: React.FC = () => {
   return (
     <LayoutComponents.Layout className="lg:pl-[10vw]">
       <LayoutComponents.Left.Panel>
+        <LayoutComponents.Left.Header>
+          <LayoutComponents.Left.Title>Documponents</LayoutComponents.Left.Title>
+        </LayoutComponents.Left.Header>
         <NavigationComponents.Panel>
-          <LayoutComponents.Left.Header>
-            <LayoutComponents.Left.Title>Documponents</LayoutComponents.Left.Title>
-          </LayoutComponents.Left.Header>
           <NavigationComponents.Nav>
             <NavigationComponents.Section>
               <NavigationComponents.Title>Section</NavigationComponents.Title>

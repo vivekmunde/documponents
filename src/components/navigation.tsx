@@ -4,16 +4,8 @@ import A, { TAProps } from './a';
 import { toggleLeft } from './layout/publications';
 import { TComponentBaseProps, THProps } from './types';
 
-export const Panel: React.FC<TComponentBaseProps & React.HTMLProps<HTMLDivElement>> = ({
-  children,
-  className,
-  ...props
-}) => {
-  return (
-    <div className={`p-4 ${className ?? ''}`} {...props}>
-      {children}
-    </div>
-  );
+export const Panel: React.FC<TComponentBaseProps & React.HTMLProps<HTMLDivElement>> = ({ children, ...props }) => {
+  return <div {...props}>{children}</div>;
 };
 
 export const Nav: React.FC<TComponentBaseProps & React.HTMLProps<HTMLElement>> = ({

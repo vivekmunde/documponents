@@ -79,6 +79,7 @@ export const Panel: React.FC<TComponentBaseProps & React.HTMLProps<HTMLDivElemen
       <div
         ref={refLeft}
         className={[
+          'p-4',
           'bg-neutral-50 dark:bg-black lg:bg-neutral-100 dark:lg:bg-neutral-900 lg:rounded',
           'lg:block',
           'absolute lg:relative z-20',
